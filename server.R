@@ -1,4 +1,3 @@
-library(shiny)
 library(shinythemes)
 #setwd("/home/anastasia/Documents/Disser/application/disser_dash")
 source("helpers.R")
@@ -19,7 +18,7 @@ data_sim7 <- data_simulated_list[[7]]
 p_names <- c("Just Russia","LDPR","CPRF","Yabloko","United Russia","Right Cause")
 
 
-shinyServer(function(input, output) {
+function(input, output) {
   
   cs_inp <- reactive({as.integer(input$cons_set)})
   
@@ -121,4 +120,3 @@ shinyServer(function(input, output) {
   })
   
 }
-)
