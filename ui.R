@@ -1,3 +1,5 @@
+library(shinythemes)
+
 fluidPage(theme = shinytheme("united"),
                 
                 titlePanel("Simulations with Consideration Set"),
