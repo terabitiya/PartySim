@@ -4,8 +4,8 @@ library(shinythemes)
 source("helpers.R")
 library(ggplot2)
 
-load("data/data_sim_list.RData")
-load("data/output_cccl_lv_euc2.RData")
+load("data_sim_list.RData")
+load("output_cccl_lv_euc2.RData")
 params <- output_lv_euc2$par
 
 data_sim1 <- data_simulated_list[[1]]
