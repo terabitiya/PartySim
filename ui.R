@@ -1,7 +1,4 @@
-library(shiny)
-
-# Define UI for application that draws a histogram
-shinyUI(fluidPage(theme = shinytheme("united"),
+fluidPage(theme = shinytheme("united"),
                 
                 titlePanel("Simulations with Consideration Set"),
                 sidebarLayout(
@@ -113,4 +110,3 @@ shinyUI(fluidPage(theme = shinytheme("united"),
                                 )
                     )
                   )))
-)
