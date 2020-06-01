@@ -2,6 +2,7 @@ library(shinythemes)
 #setwd("/home/anastasia/Documents/Disser/application/disser_dash")
 source("helpers.R")
 library(ggplot2)
+library(ggpubr)
 
 load("data_sim_list.RData")
 load("output_cccl_lv_euc2.RData")
