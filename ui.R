@@ -97,16 +97,16 @@ fluidPage(theme = shinytheme("united"),
                                       column(6, plotOutput("Plot1_7")))
                           ),
                          tabPanel("One Party",
-                                fluidRow(column(12, plotOutput("Plot2_1"))),
-                                fluidRow(column(12, plotOutput("Plot2_2"))),
-                                fluidRow(column(12, plotOutput("Plot2_3"))),
-                                fluidRow(column(7, plotOutput("Plot2_7"))),
-                                #fluidRow(column(8, plotOutput("Plot2_5"))),
-                                #fluidRow(column(8, plotOutput("Plot2_6"))),
-                                #fluidRow(column(8, plotOutput("Plot2_7")))
-                                 # fluidRow(
-                                 #   column(6, plotOutput("Plot2_1")),
-                                 #    column(6, plotOutput("Plot2_2"))),
+                                fluidRow(column(8, plotOutput("Plot2_1"))),
+                                fluidRow(column(8, plotOutput("Plot2_2"))),
+                                fluidRow(column(8, plotOutput("Plot2_3"))),
+                                fluidRow(column(8, plotOutput("Plot2_4"))),
+                                fluidRow(column(8, plotOutput("Plot2_5"))),
+                                fluidRow(column(8, plotOutput("Plot2_6"))),
+                                fluidRow(column(8, plotOutput("Plot2_7")))
+                                # fluidRow(
+                                #   column(6, plotOutput("Plot2_1")),
+                                #    column(6, plotOutput("Plot2_2"))),
                                  # fluidRow(
                                  #    column(6, plotOutput("Plot2_3")),
                                  #    column(6, plotOutput("Plot2_4"))),
