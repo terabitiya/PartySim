@@ -1,5 +1,5 @@
 library(ggplot2)
-library(ggpubr)
+#library(ggpubr)
 
 plot_cons_set_id <- function(data_sim,ideology_num,ideology_name,params,p_names_filt){
     data_sim$pr_scores <- exp(as.matrix(data_sim[,4:10])%*%params[1:7])
