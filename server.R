@@ -2,7 +2,6 @@ library(shinythemes)
 #setwd("/home/anastasia/Documents/Disser/application/disser_dash")
 source("helpers.R")
 library(ggplot2)
-library(ggpubr)
 
 load("data_sim_list.RData")
 load("output_cccl_lv_euc2.RData")
@@ -86,33 +85,33 @@ function(input, output) {
 
 #output$Text <- renderPrint({party_inp()})     
 
- # output$Plot2_1 <- renderPlot({
-  #    plot_cons_set_by_party(data_sim1,1,"Left-Right Scale",party_inp(),cons_sets_inp(),params)
-  #})
-#   output$Plot2_2 <- renderPlot({
- #     plot_cons_set_by_party(data_sim2,2,"Western Countries as an Enemy",party_inp(),cons_sets_inp(),params)
- #  })
-#   output$Plot2_3 <- renderPlot({
- #     plot_cons_set_by_party(data_sim3,3,"Democracy",party_inp(),cons_sets_inp(),params)
- #  })
-#   output$Plot2_4 <- renderPlot({
- #     plot_cons_set_by_party(data_sim4,4,"Socialism",party_inp(),cons_sets_inp(),params)
-  # })
-#   output$Plot2_5 <- renderPlot({
- #     plot_cons_set_by_party(data_sim5,5,"Market Economy",party_inp(),cons_sets_inp(),params)
- #  })
-#   output$Plot2_6 <- renderPlot({
- #     plot_cons_set_by_party(data_sim6,6,"Putin's Approval",party_inp(),cons_sets_inp(),params)
- #  })
-   output$Plot2_1 <- renderPlot({
-      plot_cons_set_by_party2(data_sim1, data_sim2,1,2,"Left-Right Scale", "Western Countries as an Enemy",party_inp(),cons_sets_inp(),params)
-   })
+  output$Plot2_1 <- renderPlot({
+     plot_cons_set_by_party(data_sim1,1,"Left-Right Scale",party_inp(),cons_sets_inp(),params)
+ })
    output$Plot2_2 <- renderPlot({
-      plot_cons_set_by_party2(data_sim3, data_sim6,3,6,"Democracy","Putin's Approval",party_inp(),cons_sets_inp(),params)
+     plot_cons_set_by_party(data_sim2,2,"Western Countries as an Enemy",party_inp(),cons_sets_inp(),params)
    })
    output$Plot2_3 <- renderPlot({
-      plot_cons_set_by_party2(data_sim5, data_sim4,5,4,"Market Economy","Socialism",party_inp(),cons_sets_inp(),params)
+      plot_cons_set_by_party(data_sim3,3,"Democracy",party_inp(),cons_sets_inp(),params)
    })
+   output$Plot2_4 <- renderPlot({
+      plot_cons_set_by_party(data_sim4,4,"Socialism",party_inp(),cons_sets_inp(),params)
+   })
+   output$Plot2_5 <- renderPlot({
+      plot_cons_set_by_party(data_sim5,5,"Market Economy",party_inp(),cons_sets_inp(),params)
+   })
+   output$Plot2_6 <- renderPlot({
+     plot_cons_set_by_party(data_sim6,6,"Putin's Approval",party_inp(),cons_sets_inp(),params)
+   })
+ #  output$Plot2_1 <- renderPlot({
+  #    plot_cons_set_by_party2(data_sim1, data_sim2,1,2,"Left-Right Scale", "Western Countries as an Enemy",party_inp(),cons_sets_inp(),params)
+  # })
+  # output$Plot2_2 <- renderPlot({
+  #    plot_cons_set_by_party2(data_sim3, data_sim6,3,6,"Democracy","Putin's Approval",party_inp(),cons_sets_inp(),params)
+  # })
+  # output$Plot2_3 <- renderPlot({
+   #   plot_cons_set_by_party2(data_sim5, data_sim4,5,4,"Market Economy","Socialism",party_inp(),cons_sets_inp(),params)
+   #})
    
    output$Plot2_7 <- renderPlot({
       plot_cons_set_by_party(data_sim7,7,"Nationalism",party_inp(),cons_sets_inp(),params)
