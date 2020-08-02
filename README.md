@@ -9,6 +9,6 @@ The model that is used in this research allows us to simulate the situation when
 
 So, to see how voters will behave conditioned on artificially created consideration sets try the application!
 
-Tip:
+##Tip:
 
 Take the plots for "Democracy" political dimension. You can interpret the plots in the following way: the more value in ideology (X axis), the more democratic a voter. The more value of democracy, the more/less probability that the voter will choose the party. That's easy!
